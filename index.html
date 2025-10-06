@@ -129,6 +129,31 @@ nav{display:flex;align-items:center;justify-content:center}
 .footer-bottom-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
 .footer-bottom a{color:#999;margin-left:14px}
 .footer-bottom a:hover{color:#fff}
+
+  /* Fix phone size + keep number on one line */
+.phone{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  border-radius:999px;
+  color:#111827;
+  white-space:nowrap;        /* prevents 3-line wrap */
+}
+.phone svg{
+  width:16px;
+  height:16px;
+  flex:0 0 auto;             /* don't stretch */
+}
+
+/* Keep the right-side header actions from wrapping */
+.actions{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:nowrap;
+}
+
 </style>
 </head>
 <body>
